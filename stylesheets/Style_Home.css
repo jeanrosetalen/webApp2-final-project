@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Lovera";
+    src: url('Lovera.otf');
+}
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+html { 
+width:100vw;
+height:100vh;
+overflow-x: hidden;
+
+background-size: cover;
+background-position: center center;
+background-repeat: repeat;
+background-image: url('Starry_night.jpeg');
+}
+h1 {
+    text-align: center;
+    font-family: "Lovera";
+    font-size: 60px;
+    margin: 30px 0;
+    color: aliceblue;
+}
+#ul {
+    list-style-type: none;
+    padding-bottom: 50px;
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+
+}
+#ul li{
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-family: 'Lovera';
+    font-size: 20px;
+    color: aliceblue;
+
+    box-shadow: inset 3px 3px 5px rgb(198, 180, 180);
+
+    background: radial-gradient(circle at 50% 50%,rgba(123, 121, 131, 1), rgba(34, 26, 75, 0.8));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ul li:hover {
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    scale: 1.2;
+}
+
+#ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
